@@ -1,0 +1,135 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('9.jpg') no-repeat  fixed ;
+      background-size: contain;
+      background-color: black;
+      color: white;
+    }
+
+    header {
+
+      padding-left:90px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: flex-start;
+      padding: 220px 530px;
+
+    }
+    .animation2 {
+        position: absolute;
+        right: 10px;
+        top: 150px;
+        width: 300px;
+        height: auto;
+        padding: 0px;
+     
+    }
+
+
+    .tab-button {
+      margin-right: 15px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background-color: rgba(202, 0, 0, 0.877);
+      color: white;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .main-content {
+      display: flex;
+      margin-top: 30px;
+      padding: 0 30px;
+      gap: 40px;
+    }
+
+    .cat-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 900px;
+      flex-shrink: 0;
+    }
+
+    .cat-img {
+      width: 200px;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+      border-radius: 12px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .tab-content {
+      display: none;
+      padding-left: 220px;
+     border-radius: 12px;
+      max-width: 700px;
+      width: 100%;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    h1, h2, p {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .tabs {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .tab-button {
+        margin-bottom: 10px;
+      }
+    }
+    
+@media (max-width: 414px) { /* iPhone 11 Pro Max width is 414px in portrait */
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+        padding: 0 10px;
+    }
+    section p {
+        width: 100%;
+    }
+    section h1 p {
+        width: 100%;
+    }
+}
